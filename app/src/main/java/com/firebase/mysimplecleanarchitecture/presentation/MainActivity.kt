@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val factory = MainViewModelFactory.getInstance()
         val viewModel = ViewModelProvider(this, factory)[MainViewModel::class.java]
-        viewModel.setName("NAFSAN")
+        viewModel.setName("Dico")
         viewModel.message.observe(this, Observer {
             tv_welcome.text = it.welcommeMessage
         })
